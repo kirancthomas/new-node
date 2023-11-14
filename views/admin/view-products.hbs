@@ -1,0 +1,31 @@
+<section>
+    <div class="container">
+        <div class="rowd-grid gap-2 d-md-flex justify-content-md-end mt-4">
+            <a  href="/admin/add-product" class="btn btn-primary ml-auto">add product</a></div>
+        
+        <table class="table mt-5">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Title</th>
+      <th scope="col">category</th>
+      <th scope="col">description</th>
+      <th>image</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each products}}
+
+    <tr>
+      <th scope="row">1</th>
+      <td>{{this.name}}</td>
+      <td>{{this.category}}</td>
+      <td>{{this.description}}</td>
+      <td><img style="width: 70px;height: 70px;"src="{{this.image}}" alt=""></td>
+    </tr>
+
+    {{/each}}
+  </tbody>
+</table>
+    </div>
+</section>
