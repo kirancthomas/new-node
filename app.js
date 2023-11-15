@@ -7,12 +7,11 @@ var dbConnection = require('./config/connection');
 var db=require('./config/connection')
 
 
+
 var userRouter = require('./routes/user');
 var adminRouter = require('./routes/admin');
 var hbs = require('express-handlebars');
-var fileUpload=require('express-fileupload')
-var multer = require('multer');
-var upload = multer({ dest: 'uploads/' });
+var fileUpload=require('express-fileupload');
 
 
 var app = express();
