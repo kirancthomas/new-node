@@ -18,6 +18,6 @@ module.exports.connect=function(done){
 
 }
 
-module.exports.get=function(){
+module.exports.post=function(){
     return state.db
 }
